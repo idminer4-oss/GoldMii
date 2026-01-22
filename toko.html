@@ -1,0 +1,47 @@
+<!-- shop.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shop - GOLDR MINER</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="max-w-md mx-auto p-6">
+    <h2 class="text-2xl font-bold mb-6 gold-text">BELI HASHRATE</h2>
+    
+    <!-- Info Saldo -->
+    <div class="bg-zinc-800 p-4 rounded-xl mb-6">
+        <p class="text-xs text-gray-400">Saldo Tersedia:</p>
+        <h3 id="bal-gold" class="text-xl font-bold text-yellow-500">0.0000</h3>
+    </div>
+
+    <div class="space-y-4">
+        <div class="bg-zinc-800 p-4 rounded-xl flex justify-between items-center border border-zinc-700">
+            <div>
+                <p class="font-bold">Paket 3 Jam</p>
+                <p class="text-yellow-500 text-sm">10.0000 EMAS</p>
+            </div>
+            <button onclick="buyHash(10, 1.5)" class="bg-gold px-4 py-2 rounded-lg font-bold">BELI</button>
+        </div>
+        
+        <div class="bg-zinc-800 p-4 rounded-xl flex justify-between items-center border border-zinc-700">
+            <div>
+                <p class="font-bold">Paket 7 Jam</p>
+                <p class="text-yellow-500 text-sm">25.0000 EMAS</p>
+            </div>
+            <button onclick="buyHash(25, 4.5)" class="bg-gold px-4 py-2 rounded-lg font-bold">BELI</button>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <div class="bottom-nav">
+        <a href="dashboard.html" class="nav-item"><i class="fas fa-home text-xl"></i><br>Home</a>
+        <a href="shop.html" class="nav-item active"><i class="fas fa-shopping-cart text-xl"></i><br>Shop</a>
+        <a href="#" class="nav-item"><i class="fas fa-headset text-xl"></i><br>CS AI</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+/* style.css */
+:root {
+    --gold: #f6d365;
+    --dark: #121212;
+    --zinc: #1e1e1e;
+}
+
+body {
+    background-color: var(--dark);
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding-bottom: 80px; /* Space for navbar */
+}
+
+.gold-text { color: var(--gold); }
+.bg-gold { background-color: var(--gold); color: black; }
+
+/* Animasi Koin Melayang */
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+.coin-logo {
+    font-size: 80px;
+    animation: floating 3s ease-in-out infinite;
+    text-shadow: 0 0 20px rgba(246, 211, 101, 0.5);
+}
+
+/* Navbar Bawah */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 450px;
+    background: #1a1a1a;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    border-top: 1px solid #333;
+}
+
+.nav-item {
+    text-align: center;
+    text-decoration: none;
+    color: #888;
+    font-size: 12px;
+}
+
+.nav-item.active { color: var(--gold); }
